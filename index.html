@@ -18,7 +18,9 @@
       <img src="imagens/logoSIBI 1.svg" alt="Logotipo do sistema integrado de bibliotecas Unisanta">
     </header>
     <div class="main">
-      <h1 class="titulo">Gerador de fichas catalográficas</h1>
+      <h1 class="titulo">Gerador de Fichas Catalográficas</h1>
+      <span data-tooltip="Em caso de problema na elaboração da ficha entrem em contato, via e-mail biblioteca.digital@unisanta.br ou via whatszapp +55 13 99642-2306" class="ajuda">?</span>
+    
 
       <!-- Formulario -->
       <form>
@@ -80,7 +82,7 @@
           <label for="nomeOrientador">Nome do Orientador</label>
           <div class="wrap-orientador">
             <select name="tituloOrientador" id="tituloOrientador" data-input="tituloOrientador">
-              <option value="">Grau:</option>
+              <option value=" ">Grau:</option>
               <option value="Dr.">Doutor</option>
               <option value="Dra.">Doutora</option>
               <option value="Me.">Mestre</option>
@@ -97,7 +99,7 @@
           <label for="nomeCoorientador">Nome do Coorientador</label>
           <div class="wrap-orientador">
             <select name="tituloCoorientador" id="tituloCoorientador" data-input="tituloCoorientador">
-              <option value="">Grau:</option>
+              <option value=" ">Grau:</option>
               <option value="Dr.">Doutor</option>
               <option value="Dra.">Doutora</option>
               <option value="Me.">Mestre</option>
@@ -191,6 +193,11 @@
           <button class="btn btn-gerar-ficha">Visualizar</button>
           <button class="btn btn-gerar-pdf">Gerar PDF</button>
           <button class="btn-cancelar">Cancelar</button>
+          <div class="wrap-range">
+            <button class="menos">-</button>
+            <div><span class="tamanho-fonte">14</span>px</div>
+            <button class="mais">+</button>
+          </div>
           <p class="erro">ERRO: Deve preencher todos os campos obrigatorios</p>
         </div>
 

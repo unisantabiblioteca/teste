@@ -508,4 +508,13 @@ input {
   header{
     display: none;
   }
+    .ajuda{
+    top:40px;
+    right: 40px;
+  }
+  .author{
+    bottom: -3rem;
+    text-align: center;
+    width: 400px;
+  }
 }

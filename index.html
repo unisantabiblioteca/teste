@@ -7,24 +7,15 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Gerador de Fichas Catalográficas</title>
-    <meta
-      name="description"
-      content="Formulario para criação de fichas catalograficas da Universidade Santa Cecilia"
-    />
+    <meta name="description" content="Formulario para criação de fichas catalograficas da Universidade Santa Cecilia" />
   </head>
 
   <body class="guia">
     <div class="app">
       <!-- Inicio APP -->
       <header>
-        <img
-          src="imagens/logoUnisanta 1.svg"
-          alt="Logotipo da Universidade Santa Cecilia"
-        />
-        <img
-          src="imagens/logoSIBI 1.svg"
-          alt="Logotipo do sistema integrado de bibliotecas Unisanta"
-        />
+        <img src="imagens/logoUnisanta 1.svg" alt="Logotipo da Universidade Santa Cecilia" />
+        <img src="imagens/logoSIBI 1.svg" alt="Logotipo do sistema integrado de bibliotecas Unisanta" />
       </header>
       <div class="main">
         <div id="menu">
@@ -60,12 +51,7 @@
           </div>
           <div class="wrap-input coluna2-5">
             <label for="sobrenomeAluno">Sobrenome do autor</label>
-            <input
-              id="sobrenomeAluno"
-              type="text"
-              data-input="sobrenomeAluno"
-              required
-            />
+            <input id="sobrenomeAluno" type="text" data-input="sobrenomeAluno" required />
             <div class="wrap-btn-autor">
               <div class="btn-adicionar-autor">Adicionar Autor +</div>
               <div class="btn-remover-autor">Remover -</div>
@@ -81,12 +67,7 @@
           </div>
           <div class="wrap-input coluna1-3">
             <label for="instituicao">Instituição</label>
-            <input
-              id="instituicao"
-              type="text"
-              data-input="instituicao"
-              required
-            />
+            <input id="instituicao" type="text" data-input="instituicao" required />
           </div>
           <div class="wrap-input coluna3-4">
             <label for="cidade">Cidade</label>
@@ -101,8 +82,7 @@
               class="uppercase align-center"
               data-input="instituicao"
               maxlength="2"
-              required
-            />
+              required />
           </div>
           <div class="wrap-input coluna1-2">
             <label for="ano">Ano</label>
@@ -110,31 +90,15 @@
           </div>
           <div class="wrap-input coluna2-3">
             <label for="folhas">Folhas</label>
-            <input
-              id="folhas"
-              type="number"
-              data-input="folhas"
-              class="align-center"
-              placeholder="Nº"
-              required
-            />
+            <input id="folhas" type="number" data-input="folhas" class="align-center" placeholder="Nº" required />
           </div>
           <div class="wrap-input coluna3-5">
             <label for="tipoTrabalho">Tipo de trabalho:</label>
-            <select
-              name="tipoTrabalho"
-              id="tipoTrabalho"
-              data-input="tipoTrabalho"
-              required
-            >
-              <option value="inicial" disabled selected>
-                Selecione um tipo:
-              </option>
+            <select name="tipoTrabalho" id="tipoTrabalho" data-input="tipoTrabalho" required>
+              <option value="inicial" disabled selected>Selecione um tipo:</option>
               <option value="TCC">TCC</option>
               <option value="Dissertação">Dissertação</option>
-              <option value="Dissertação (Mestrado)">
-                Dissertação (Mestrado)
-              </option>
+              <option value="Dissertação (Mestrado)">Dissertação (Mestrado)</option>
               <option value="Tese (Doutorado)">Tese (Doutorado)</option>
             </select>
           </div>
@@ -145,64 +109,36 @@
           <div class="wrap-input coluna1-3">
             <label for="nomeOrientador">Nome do Orientador</label>
             <div class="wrap-orientador">
-              <select
-                name="tituloOrientador"
-                id="tituloOrientador"
-                data-input="tituloOrientador"
-              >
+              <select name="tituloOrientador" id="tituloOrientador" data-input="tituloOrientador">
                 <option value=" ">Grau:</option>
                 <option value="Dr.">Doutor</option>
                 <option value="Dra.">Doutora</option>
                 <option value="Me.">Mestre</option>
                 <option value="Ma.">Mestra</option>
               </select>
-              <input
-                id="nomeOrientador"
-                type="text"
-                data-input="nomeOrientador"
-                required
-              />
+              <input id="nomeOrientador" type="text" data-input="nomeOrientador" required />
             </div>
           </div>
           <div class="wrap-input coluna3-5">
             <label for="sobrenomeOrientador ">Sobrenome do orientador</label>
-            <input
-              id="sobrenomeOrientador"
-              type="text"
-              data-input="sobrenomeOrientador"
-              required
-            />
+            <input id="sobrenomeOrientador" type="text" data-input="sobrenomeOrientador" required />
           </div>
           <div class="wrap-input coluna1-3">
             <label for="nomeCoorientador">Nome do Coorientador</label>
             <div class="wrap-orientador">
-              <select
-                name="tituloCoorientador"
-                id="tituloCoorientador"
-                data-input="tituloCoorientador"
-              >
+              <select name="tituloCoorientador" id="tituloCoorientador" data-input="tituloCoorientador">
                 <option value=" ">Grau:</option>
                 <option value="Dr.">Doutor</option>
                 <option value="Dra.">Doutora</option>
                 <option value="Me.">Mestre</option>
                 <option value="Ma.">Mestra</option>
               </select>
-              <input
-                id="nomeCoorientador"
-                type="text"
-                data-input="nomeCoorientador"
-              />
+              <input id="nomeCoorientador" type="text" data-input="nomeCoorientador" />
             </div>
           </div>
           <div class="wrap-input coluna3-5">
-            <label for="sobrenomeCoorientador "
-              >Sobrenome do Coorientador</label
-            >
-            <input
-              id="sobrenomeCoorientador"
-              type="text"
-              data-input="sobrenomeCoorientador"
-            />
+            <label for="sobrenomeCoorientador ">Sobrenome do Coorientador</label>
+            <input id="sobrenomeCoorientador" type="text" data-input="sobrenomeCoorientador" />
           </div>
           <div class="wrap-input coluna1-3">
             <label for="assunto1">Assunto 1</label>
@@ -237,10 +173,7 @@
             <input id="codigo2" type="text" data-input="codigo2" required />
           </div>
           <p class="email-adm">
-            Solicite o CDD e PHA através dos e-mails abaixo:<br /><a
-              href="mailto:amrs@unisanta.br"
-              >amrs@unisanta.br</a
-            >
+            Solicite o CDD e PHA através dos e-mails abaixo:<br /><a href="mailto:amrs@unisanta.br">amrs@unisanta.br</a>
             e
             <a href="mailto:rafaelmicco@unisanta.br">rafaelmicco@unisanta.br</a>
           </p>
@@ -260,30 +193,15 @@
               <div class="ficha-info-item">
                 <p><span data-value="nomeInvertidoAluno"></span></p>
                 <p class="text-indent">
-                  <span data-value="titulo"></span
-                  ><span data-value="subtitulo"></span> /
+                  <span data-value="titulo"></span><span data-value="subtitulo"></span> /
                   <span data-value="nomeAluno"></span>
-                  <span data-value="sobrenomeAluno"></span
-                  ><span data-value="nomeAluno2"></span>
-                  <span
-                    class="listaSobrenome"
-                    data-value="sobrenomeAluno2"
-                  ></span
+                  <span data-value="sobrenomeAluno"></span><span data-value="nomeAluno2"></span>
+                  <span class="listaSobrenome" data-value="sobrenomeAluno2"></span
                   ><span data-value="nomeAluno3"></span>
-                  <span
-                    class="listaSobrenome"
-                    data-value="sobrenomeAluno3"
-                  ></span
+                  <span class="listaSobrenome" data-value="sobrenomeAluno3"></span
                   ><span data-value="nomeAluno4"></span>
-                  <span
-                    class="listaSobrenome"
-                    data-value="sobrenomeAluno4"
-                  ></span
-                  ><span data-value="nomeAluno5"></span>
-                  <span
-                    class="listaSobrenome"
-                    data-value="sobrenomeAluno5"
-                  ></span>
+                  <span class="listaSobrenome" data-value="sobrenomeAluno4"></span><span data-value="nomeAluno5"></span>
+                  <span class="listaSobrenome" data-value="sobrenomeAluno5"></span>
                 </p>
                 <p class="text-indent"><span data-value="ano"></span>.</p>
                 <p class="text-indent"><span data-value="folhas"></span> f.</p>
@@ -301,37 +219,28 @@
               </div>
               <div class="ficha-info-item">
                 <p class="text-indent">
-                  <span data-value="tipoTrabalho"></span> -
-                  <span data-value="instituicao"></span>,
+                  <span data-value="tipoTrabalho"></span> - <span data-value="instituicao"></span>,
                   <span data-value="curso"></span>
-                  <span data-value="cidade"></span>,
-                  <span data-value="estado"></span>,
-                  <span data-value="ano"></span>.
+                  <span data-value="cidade"></span>, <span data-value="estado"></span>, <span data-value="ano"></span>.
                 </p>
               </div>
               <div class="ficha-info-item">
-                <span class="extra-padding-left"
-                  ><span data-value="assunto1" id="1."></span
-                ></span>
+                <span class="extra-padding-left"><span data-value="assunto1" id="1."></span></span>
                 <span><span id="2." data-value="assunto2"></span></span>
                 <span><span id="3." data-value="assunto3"></span></span>
                 <span><span id="4." data-value="assunto4"></span></span>
                 <span><span id="5." data-value="assunto5"></span></span>
                 <span><span id="6." data-value="assunto6"></span></span>
                 <div class="listaRomana">
-                  <span data-value="nomeOrientadorInverido"></span
-                  ><span data-value="nomeInvertidoAluno2"></span
-                  ><span data-value="nomeInvertidoAluno3"></span
-                  ><span data-value="nomeInvertidoAluno4"></span
-                  ><span data-value="nomeInvertidoAluno5"></span
-                  ><span data-value="titulo"></span>
+                  <span data-value="nomeOrientadorInverido"></span><span data-value="nomeInvertidoAluno2"></span
+                  ><span data-value="nomeInvertidoAluno3"></span><span data-value="nomeInvertidoAluno4"></span
+                  ><span data-value="nomeInvertidoAluno5"></span><span data-value="titulo"></span>
                 </div>
               </div>
             </div>
             <p class="align-center elaborado">
-              Elaborada via formulário eletrônico, desenvolvido pelo SIBi
-              Unisanta, com dados informados pelo autor(a). Bibliotecário
-              responsável: Ana Maria Racioppi Silveira - CRB/8 - 1890
+              Elaborada via formulário eletrônico, desenvolvido pelo SIBi Unisanta, com dados informados pelo autor(a).
+              Bibliotecário responsável: Ana Maria Racioppi Silveira - CRB/8 - 1890
             </p>
           </div>
           <!-- Fim informação que sera gerada no PDF -->
@@ -345,14 +254,14 @@
               <div><span class="tamanho-fonte">14</span>px</div>
               <button class="mais">+</button>
             </div>
-            <p class="erro">
-              ERRO: Deve preencher todos os campos obrigatorios
-            </p>
+            <p class="erro">ERRO: Deve preencher todos os campos obrigatorios</p>
           </div>
         </div>
       </div>
 
-      <p class="author">Desenvolvido por Gabriel Bragion de Micco</p>
+      <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank" class="author"
+        >Desenvolvido por Gabriel Bragion de Micco</a
+      >
     </div>
     <!-- fim da APP -->
 

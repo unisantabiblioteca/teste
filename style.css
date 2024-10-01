@@ -39,6 +39,14 @@ input[type=number] {
 a{
   text-decoration: none;
 }
+.icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  stroke-width: 0;
+  stroke: var(--cor-primaria);
+  fill: var(--cor-primaria);
+}
 /* APP */
 
 .app{
@@ -247,8 +255,28 @@ a.author{
 }
 
 .infos-contatos-wrap{
-  height: 50dvh;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-inline: auto;
+  gap: 2rem;
+  align-items: center;
+  height: 300px;
 }
+.lista-contatos li{
+  display: flex;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  align-items: center;
+  
+}
+.lista-contatos li a{
+  color: #000;
+}
+.lista-contatos, .infos-contatos-wrap p{
+  flex: 1;
+}
+
 
 /* FORMULARIO */
 
@@ -262,7 +290,7 @@ form {
   margin-inline: auto;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 600px;
+  max-height: 400px;
 }
 .email-adm{
   grid-column: 1/5;

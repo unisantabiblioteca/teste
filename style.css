@@ -55,6 +55,9 @@ a{
   padding-inline: 1rem;
   position: relative;
 }
+.app.guia{
+  transform: translateX(8px);
+}
 header{
   display: flex;
   justify-content: space-between;
@@ -154,8 +157,8 @@ header{
   width: 280px;
   height: 100%;
   transform: translate(-20px,-30px);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 .main{
   display: grid;
@@ -168,6 +171,13 @@ header{
   margin-block: 2rem 4rem;
   padding: 2rem;
   position: relative;
+  height: 80dvh;
+}
+.main.guia{
+  height: 100%;
+}
+.main.contato{
+  height: 40dvh;
 }
 .main h1{
   text-align: center;
@@ -255,13 +265,11 @@ a.author{
 }
 
 .infos-contatos-wrap{
-  display: flex;
-  justify-content: space-between;
-  width: 700px;
-  margin-inline: auto;
-  gap: 2rem;
-  align-items: center;
-  height: 300px;
+ display: flex;
+ justify-content: space-between;
+ gap: 2rem;
+ margin-inline: auto;
+ max-width: 600px;
 }
 .lista-contatos li{
   display: flex;
@@ -290,7 +298,6 @@ form {
   margin-inline: auto;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 400px;
 }
 .email-adm{
   grid-column: 1/5;
@@ -691,5 +698,14 @@ input {
   }
   .infos-guia-wrap{
     margin-block: 3rem;
+  }
+  .infos-contatos-wrap{
+    flex-direction: column;
+    grid-column: 1;
+    gap: .5rem;
+  }
+  .infos-contatos-wrap p{
+    max-width: 400px;
+    margin-block: .5rem;
   }
 }
